@@ -1,0 +1,33 @@
+images :
+    - 'imagemin'
+    - 'sprite'
+
+minifyDev:
+    - 'jshint'
+    - 'concat:dev'
+
+minifyDist:
+    - 'jshint'
+    - 'concat:dist'
+    - 'uglify'
+
+buildDev:
+    - 'images'
+    - 'copy'
+    - 'jade:dev'
+    - 'sass:dev'
+    - 'minifyDev'
+
+buildDist:
+    - 'images'
+    - 'jade:dist'
+    - 'sass:dist'
+    - 'minifyDist'
+
+server:
+    - 'buildDev'
+    - 'connect'
+    - 'watch'
+
+default:
+    - 'server'
