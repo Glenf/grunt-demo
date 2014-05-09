@@ -4,12 +4,12 @@ module.exports = {
 			pretty : true // Indenting html structure
 		},
 		files : {
-			'dev/index.html' : 'src/jade/index.jade'
+			'dev/index.html' : 'src/index.jade'
 		}
 	},
 	dist : {
 		files : {
-			'dist/index.html' : 'src/jade/index.jade'
+			'dist/index.html' : 'src/index.jade'
 		}
 	}
 }

@@ -16,6 +16,8 @@
     "time-grunt": "~0.2.9",
     "grunt-newer": "~0.6.1",
     "grunt-notify": "~0.2.17",
-    "load-grunt-config": "~0.7.1"
+    "load-grunt-config": "~0.7.1",
+    "grunt-bowercopy": "^1.0.0",
+    "grunt-contrib-cssmin": "^0.9.0"
   }
 }

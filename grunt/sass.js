@@ -5,7 +5,7 @@ module.exports = {
 			sourcemap : true
 		},
 		files : {
-			'dev/css/style.css' : 'src/sass/style.scss'
+			'.tmp/style.css' : 'src/sass/style.scss'
 		}
 	},
 	dist : {
@@ -13,7 +13,7 @@ module.exports = {
 			style : 'compressed'
 		},
 		files : {
-			'dist/css/style.css' : 'src/sass/style.scss'
+			'.tmp/style.css' : 'src/sass/style.scss'
 		}
 	}
 }

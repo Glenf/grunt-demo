@@ -8,7 +8,8 @@ module.exports = {
 	},
 	dist : {
 		files : {
-			'dist/js/<%= pkg.name %>.min.js' : '<%= concat.dist.dest %>'
+			'dist/js/app.min.js' : '<%= concat.dist.dest %>',
+			'dist/js/vendor.min.js' : '<%= concat.vendordist.dest %>'
 		}
 	}
 }

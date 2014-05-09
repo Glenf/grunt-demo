@@ -5,10 +5,12 @@ images :
 minifyDev:
     - 'jshint'
     - 'concat:dev'
+    - 'concat:vendordev'
 
 minifyDist:
     - 'jshint'
     - 'concat:dist'
+    - 'concat:vendordist'
     - 'uglify'
 
 buildDev:
@@ -16,12 +18,14 @@ buildDev:
     - 'copy'
     - 'jade:dev'
     - 'sass:dev'
+    - 'cssmin:dev'
     - 'minifyDev'
 
 buildDist:
     - 'images'
     - 'jade:dist'
     - 'sass:dist'
+    - 'cssmin:dist'
     - 'minifyDist'
 
 server:

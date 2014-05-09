@@ -1,11 +1,9 @@
-$fontSize : 2.2em;
-$bgColor : #ccc;
+@charset "UTF-8";
+
+@import "vars";
+@import "../../bower_components/inuitcss/_inuit.scss";
+
 
 body {
-	padding : 1em;
-	background-color : $bgColor;
-}
-
-h1 {
-	font-size : $fontSize;
+	/*background-color : red!important;*/
 }
